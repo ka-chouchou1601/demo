@@ -5,12 +5,19 @@ const bodyParser = require("body-parser");
 const translate = require('@vitalets/google-translate-api');
 
 const app = express();
+
+
+
+
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+app.get('/home',(req,res) => {
+  res.render('home')
+})
 
 
 

@@ -1,0 +1,191 @@
+html,body,header {
+    font-family: "Montserrat";
+    text-align: center;
+    scroll-behavior: smooth;
+    
+  }
+ 
+  /*sections*/
+  .colored-section {
+    background-color:#d66279 ;
+    color: #fff;
+    min-height: 20vh;
+    display:flex;
+  }
+  
+  .white-section {
+    background-color: #fff;
+    min-height:50vh;
+  }
+  /*Navigation Bar */
+  .navbar .active {
+    
+    padding: 0.0rem;
+    font-family: 'Andika New Basic', sans-serif;
+  }
+  
+  .navbar-brand {
+    font-family: 'Andika New Basic', sans-serif;
+    font-size: 0 0 0.0rem;
+    font-weight: 900;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+    font-family: 'Andika New Basic', sans-serif;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight:  800;
+    font-family: "Montserrat-Light";
+  
+
+  }
+  .nav-link:hover{
+    font-weight: 500;
+    color:#d66279;
+    border-bottom: 4px solid #d66279!important;
+    
+
+  }
+ 
+ 
+  /* Title Section 
+
+#title {
+ 
+    text-align: left;
+  }
+  
+  #title .container-fluid {
+    padding: 2% 2% 2%;
+  }
+  
+*/
+  
+  .title-image {
+    width: 50%;
+    position: absolute;
+    bottom: 1px;
+    left: 30%;
+  border-radius: 100%;
+  margin: 20px;
+
+  }
+  
+
+  /*features*/
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 6.5%;
+
+}
+
+.icon {
+  color: #d66279;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #E8A4B2;
+}
+/*about*/
+.about {
+min-height: 20vh;
+  padding: 6.5%;
+  background-color: #d66279;
+}
+
+/*script*/
+#scripts {
+  background-image: url(../images/photo3.jpg);
+  background-repeat: no-repeat;
+  background-size: 170% 100% 100%;
+  position: relative;
+  min-height: 20vh;
+  padding: 6.5%;
+}
+
+.script-title {
+  font-size: 1.5rem;
+  color:#fff;
+}
+.script-image {
+  width: 90%;
+  border-radius: 100%;
+  margin: 20px;
+  margin-bottom: 1rem;
+}
+.script-image:hover{
+  background-color:#E8A4B2;
+}
+
+.script-box {
+ 
+  padding: 6.5%;
+
+}
+
+.icon-script {
+  color: #d66279;
+  margin-bottom: 1rem;
+}
+
+.icon-script:hover {
+  color: #E8A4B2;
+}
+/*footer*/
+#footer{
+  padding: 2% 15%;
+  background-color: #d66279;
+  text-align:center;
+  color:whitesmoke;
+}
+
+.social-icon {
+
+  margin: 20px 10px ;
+}
+.social-icon:hover{
+  background:#E8A4B2;
+}
+
+.contact-msg{
+  padding: 2.5%;
+color:black;
+  background-color:white ;
+ 
+}
+.btn {
+  background: #d66279;
+  background-image: -webkit-linear-gradient(top, #194350, #194350);
+  background-image: -moz-linear-gradient(top, #194350, #194350);
+  background-image: -ms-linear-gradient(top, #194350, #194350);
+  background-image: -o-linear-gradient(top, #194350, #194350);
+  background-image: linear-gradient(to bottom, #194350, #194350);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 170px 5px 170px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background:#E8A4B2;
+  background-image: -webkit-linear-gradient(top, #E8A4B2,#E8A4B2 );
+  background-image: -moz-linear-gradient(top, #E8A4B2, #E8A4B2);
+  background-image: -ms-linear-gradient(top, #E8A4B2, #E8A4B2);
+  background-image: -o-linear-gradient(top, #E8A4B2, #E8A4B2);
+  background-image: linear-gradient(to bottom, #E8A4B2, #E8A4B2);
+  text-decoration: none;
+}
