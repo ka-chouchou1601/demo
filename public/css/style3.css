@@ -1,9 +1,82 @@
-.form-control{
-    width:100%;
-    border:1px solid #aaa;
-    border-radius:4px;
-    margin: 15px 0;
-    outline:none;
-    padding :8px;
-   
+
+body {
+    margin:0 auto;
+    padding: 230px;
+    background-image:url(../images/sympback.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family:sans-serif;
 }
+h3{
+    width:max-content;
+    margin: auto;
+    margin-bottom: 20px;
+   
+    text-size-adjust: 1rem;
+    background-color: #d66279;
+   
+     padding: 1 0.5em;
+    line-height:1em;
+  }
+   
+    
+    
+ 
+
+.container{
+    width:360px;
+    height:420px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+}
+
+.form-group{
+    position: relative;
+    border-radius: 100px;
+}
+
+.form-control{
+    padding: 3px;
+
+
+  }
+  .btn{
+      border-radius: 100px;
+      margin:10 px;
+      padding:3px;
+      background-color: #d66279;
+  }
+  .btn:hover{
+    background:#E8A4B2;
+  }
+
+  .input-group{
+    border-radius: 100px; 
+  }
+  button{
+      
+    background-color: #194350;
+    border:0px solid;
+    width:40px;
+    height:40px;
+  }
+.icon{
+    
+  color: white;
+  }
+input{
+
+  background: transparent;
+    border-radius: 100px;
+    margin:10 px 5px 10px 0px;
+    font-size: 20px;
+    outline: none;
+
+}
+   

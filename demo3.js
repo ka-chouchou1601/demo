@@ -21,13 +21,68 @@ app.get('/speechtranslator',(req,res) => {
 app.post('/speechtranslator',(req,res) => {
 
   console.log(req.body.speech)
-
-  translate(req.body.speech, {to: req.body.language}).then(response => {
+ translate(req.body.speech, {to: req.body.language}).then(response => {
     res.render('speechtranslator',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:response.text})
 }).catch(err => {
     console.error(err);
 });
+})
 
+
+app.get('/Pain',(req,res) => {
+  res.render('Pain',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:""})
+})
+
+app.post('/Pain',(req,res) => {
+
+  console.log(req.body.speech)
+ translate(req.body.speech, {to: req.body.language}).then(response => {
+    res.render('Pain',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:response.text})
+}).catch(err => {
+    console.error(err);
+});
+})
+
+app.get('/Dental',(req,res) => {
+  res.render('Dental',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:""})
+})
+
+app.post('/Dental',(req,res) => {
+
+  console.log(req.body.speech)
+ translate(req.body.speech, {to: req.body.language}).then(response => {
+    res.render('Dental',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:response.text})
+}).catch(err => {
+    console.error(err);
+});
+})
+
+app.get('/Diagnosis',(req,res) => {
+  res.render('Diagnosis',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:""})
+})
+
+app.post('/Diagnosis',(req,res) => {
+
+  console.log(req.body.speech)
+ translate(req.body.speech, {to: req.body.language}).then(response => {
+    res.render('Diagnosis',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:response.text})
+}).catch(err => {
+    console.error(err);
+});
+})
+
+app.get('/Medications',(req,res) => {
+  res.render('Medications',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:""})
+})
+
+app.post('/Medications',(req,res) => {
+
+  console.log(req.body.speech)
+ translate(req.body.speech, {to: req.body.language}).then(response => {
+    res.render('Medications',{title:"Speech Translator Online to Multiple Languages - Free Media Tools",translated:response.text})
+}).catch(err => {
+    console.error(err);
+});
 })
 
 
