@@ -9,15 +9,15 @@ body {
     font-family:sans-serif;
 }
 h3{
-    width:max-content;
+    width:340px;
     margin: auto;
     margin-bottom: 20px;
-   
+   margin-right:130px;
     text-size-adjust: 1rem;
     background-color: #d66279;
    
      padding: 1 0.5em;
-    line-height:1em;
+     
   }
    
     
