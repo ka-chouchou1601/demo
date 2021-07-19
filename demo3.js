@@ -6,18 +6,80 @@ const translate = require('@vitalets/google-translate-api');
 
 const app = express();
 
+var mongoose = require("mongoose")
+const bcrypt=require('bcrypt')
 
-
-
-app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
+app.use(express.static('public'))
 
-app.use(express.urlencoded({ extended: false }));
+
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+mongoose.connect('mongodb://localhost:27017/mydb',{
+    useNewUrlParser: true,
+   
+});
+
+
+const db = mongoose.connection;
+
+db.on('error',()=>console.log("Error in Connecting to Database"));
+db.once('open',()=>console.log("Connected to Database"))
+
+app.get("/sign_up",(req,res)=>{
+  res.set({
+      "Allow-access-Allow-Origin": '*'
+  })
+  return res.redirect('sign.html');
+})
+
+
+app.post("/sign_up", async (req,res)=>{
+  try{
+    const salt=await bcrypt.genSalt()
+    const hashedPassword=await bcrypt.hash(req.body.password, salt)
+    console.log(salt)
+    console.log(hashedPassword)
+  
+     const name = req.body.name;
+     var email = req.body.email;
+     var role = req.body.role;
+     var password = req.body.hashedPassword;
+
+     var data = {
+      "name": name,
+      "email" : email,
+      "role":role,
+      "password" : hashedPassword
+  
+  } 
+  }catch{
+    res.status(500).send()
+  }
+db.collection('users').insertOne(data,(err,collection)=>{
+        if(err){
+            throw err;
+        }
+        console.log("Recorded Successfully Go back and login");
+    });
+
+    return res.redirect('success.html')
+
+});
+
+
+
+
+
+
+
 
 app.get('/home',(req,res) => {
   res.render('home')
 })
+
 
 
 

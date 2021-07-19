@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form - MongoDB</title>
+
+   
+    
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap" rel="stylesheet">
+
+ <!-- CSS Stylesheets -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/style2.css">
+
+ <!-- Font Awesome -->
+ <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+ <!-- Bootstrap Scripts -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 main">
+                <div class="login-wrapper">
+                    <form action="/sign_up" class="form" method="POST">
+                    
+                      <h2>Sign Up</h2>
+                      <div class="input-group">
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">Name</label>
+                      </div>
+                      <div class="input-group">
+                        <input type="Email" name="email" id="email" required>
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="input-group">
+                        <input type="Role" name="role" id="role" required>
+                        <label for="role">Role</label>
+                      </div>
+                      <div class="input-group">
+                      
+                        <input type="password" class="box" id="password" name="password" required />
+                      
+                        <label for="password">Password</label>
+
+                      </div>
+                     <div>
+                      <input type="submit" value="Submit" id="submit" />
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+
+</body>
+
+</html>
