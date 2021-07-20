@@ -6,6 +6,7 @@ const translate = require('@vitalets/google-translate-api');
 
 const app = express();
 
+
 var mongoose = require("mongoose")
 const bcrypt=require('bcrypt')
 
@@ -23,7 +24,7 @@ mongoose.connect('mongodb://localhost:27017/mydb',{
 });
 
 
-const db = mongoose.connection;
+var db = mongoose.connection;
 
 db.on('error',()=>console.log("Error in Connecting to Database"));
 db.once('open',()=>console.log("Connected to Database"))
@@ -50,7 +51,7 @@ app.post("/sign_up", async (req,res)=>{
 
      var data = {
       "name": name,
-      "email" : email,
+      "email":email,
       "role":role,
       "password" : hashedPassword
   
@@ -65,9 +66,16 @@ db.collection('users').insertOne(data,(err,collection)=>{
         console.log("Recorded Successfully Go back and login");
     });
 
-    return res.redirect('success.html')
+    return res.redirect('login.html')
 
 });
+app.get("/login",(req,res)=>{
+  res.set({
+      "Allow-access-Allow-Origin": '*'
+  })
+  return res.redirect('login.html');
+})
+
 
 
 

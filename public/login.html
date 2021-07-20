@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp Form - MongoDB</title>
+    <title>Login</title>
 
    
     
@@ -35,21 +35,22 @@
         <div class="row">
             <div class="col-md-6 main">
                 <div class="login-wrapper">
-                    <form action="" class="form">
+                    <form action="/login" class="form" method="POST">
                     
-                      <h2>Sign Up</h2>
+                      <h2>Login</h2>
                       <div class="input-group">
-                        <input type="text" name="loginUser" id="loginUser" required>
-                        <label for="loginUser">Name</label>
+                        <input type="text" name="email" id="email" required>
+                        <label for="email">Email</label>
                       </div>
                       
                       <div class="input-group">
-                        <input type="password" name="loginPassword" id="loginPassword" required>
-                        <label for="loginPassword">Password</label>
+                        <input type="password" name="password" id="password" required>
+                        <label for="password">Password</label>
 
                       </div>
                      <div>
-                      <input type="submit" value="Submit" id="submit" />
+                      <a class=" submit " type="submit" href="/home" value="Submit" id="submit" >login</a>
+                     
                     </div>
                 </form>
             </div>
