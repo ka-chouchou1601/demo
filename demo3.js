@@ -18,7 +18,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/mydb',{
+mongoose.connect('mongodb+srv://admin-chouella:Chousnellor_1@midproject.d5hh9.mongodb.net/mydb',{
     useNewUrlParser: true,
    
 });
@@ -66,7 +66,7 @@ db.collection('users').insertOne(data,(err,collection)=>{
         console.log("Recorded Successfully Go back and login");
     });
 
-    return res.redirect('index.html')
+    return res.redirect('login.html')
 
 });
 
