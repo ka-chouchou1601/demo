@@ -18,10 +18,12 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://admin-chouella:Chousnellor_1@midproject.d5hh9.mongodb.net/mydb',{
+mongoose.connect(
+  "mongodb+srv://Chouella:Chousnellor_1@cluster1.rlh2q.mongodb.net/",
+  {
     useNewUrlParser: true,
-   
-});
+  }
+);
 
 
 var db = mongoose.connection;
